@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marvel</title>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    * {
+
+      scroll-behavior: smooth;
+
+    }
+
+    #nav {
+
+      background-color: Red;
+      font-size: 20px;
+      font-weight: 700;
+
+
+    }
+
+    #space {
+
+      font-size: 30px;
+
+    }
+
+    #logo {
+
+      border-color: red;
+
+    }
+
+    #about {
+
+      background-color: black;
+
+    }
+
+    .uparrow {
+
+      animation-name: arrowup;
+      animation-timeline: scroll(y);
+
+    }
+
+    @keyframes arrowup {
+
+      0% {
+
+        opacity: 0;
+        display: none;
+        position: fixed;
+
+      }
+
+      3% {
+
+        opacity: 1;
+        display: none;
+
+      }
+
+      3.5% {
+
+        opacity: 1;
+        display: none;
+
+      }
+
+      100% {
+
+        opacity: 1;
+        display: block;
+        position: fixed;
+
+      }
+
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg sticky-top" id="nav">
+      <img src="imageProxy.webp" class="img-thumbnail mx-2 bg-dark" alt="logo" width="50px" height="50px" id="logo">
+      <a class="navbar-brand text-light" href="#" id="space">Marvel</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="btn1">
+        <span class="navbar-toggler-icon" id="toggle"></span>
+      </button>
+      <div class="collapse navbar-collapse ms-1" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto text-center " id="nav-lists">
+          <li class="nav-item mx-3">
+            <a href="#home"
+              style=" color: white; font-size: 15px; font-family: Arial, Helvetica, sans-serif;  text-decoration: none;">Home</a>
+          </li>
+
+          <li class="nav-item mx-3">
+            <a href="#blog"
+              style=" color: white; font-size: 15px; font-family: Arial, Helvetica, sans-serif; text-decoration: none;">Blog</a>
+          </li>
+
+          <li class="nav-item mx-3">
+            <a href="#about"
+              style=" color: white; font-size: 15px; font-family: Arial, Helvetica, sans-serif; text-decoration:none;">About</a>
+          </li>
+
+          <li class="nav-item mx-3">
+            <a href="#feedback"
+              style=" color: white; font-size: 15px; font-family: Arial, Helvetica, sans-serif; text-decoration: none;">Feedback</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </nav>
+    <hr>
+
+    <div class="text-center mt-3" id="home">
+
+      <h3 id="w2">Learn More About My Favorite Heroes</h3>
+      <h5 id="w3" class="mt-4" style="font-size: 25px;">This is my blog. Here i share about my favoutite superheroes
+        from <b style="font-weight: 1000;">MARVEL</b></h5>
+      <hr>
+
+      <h2 class="text-center" style="font-weight: 700;">Marvel</h2>
+      <p class="" style="font-weight: 500; font-size: 25px;">Marvel is a premier entertainment brand featuring a vast
+        universe of comic books, films, and games centered around iconic heroes like Spider-Man, Iron Man, the Avengers,
+        and the X-Men. Owned by Disney, Marvel produces top-streaming content on Disney+, including new seasons of
+        Daredevil, and connects fans via movies, media, and merchandise.</p>
+
+      <img src="marvel.jpg" alt="marvel" class="img-fluid">
+
+    </div>
+
+    <div class="" id="blog"></div>
+    <hr>
+
+    <h2 class="text-center display-6" style="font-weight: 700;">Blog</h2>
+    <h2 class="text-center display-6" style="font-weight: 500; font-family: 'Times New Roman', Times, serif;">Some
+      Famous Marvel Characters</h2>
+    <div class="text-center text-secondary blockquote">-Based on google's result</div>
+    <hr>
+
+    <div class="row row-cols-1 row-cols-md-4 g-3 ">
+
+      <!---Ironman-->
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="ironman.jpg" class="card-img-top" alt="ironman" style="border-radius: 0;">
+          <div class="card-body">
+            <h5 class="card-title">Ironman</h5>
+            <p class="card-text">Iron Man is the superhero persona of Anthony Edward "Tony" Stark, a businessman and
+              engineer who runs the weapons manufacturing company Stark Industries.</p>
+            <hr>
+            <a href="" class="btn d-grid" data-bs-toggle="modal" data-bs-target="#mod1"
+              style="background-color: saddlebrown; color: white;">Read more</a>
+            <div class="modal fade" tabindex="-1" id="mod1" aria-hidden="true" data-bs-keyboard="false"
+              data-bs-backdrop="static">
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title"
+                      style="font-weight: 50px; font-family: 'Times New Roman', Times, serif; font-size: 40px;">
+                      Ironman</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="ironman.jpg" class="img-fluid">
+                    <p class="text-secondary mt-3"
+                      style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; word-spacing: 1px;">
+                      Iron Man is a genius billionaire inventor, Tony Stark, who creates a powerful armored suit to
+                      save his life and protect the world. After being captured by enemies, he builds the first suit
+                      to escape and later refines it into advanced versions with flight, weapons, and AI systems. As a
+                      founding member of the Avengers, he plays a crucial role in defending Earth from major threats.
+                      Known for his intelligence, wit, and bravery, Iron Man evolves from a self-centered
+                      industrialist into a selfless hero who ultimately sacrifices everything for humanity’s survival.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!---Captain America-->
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="Captain america.jpg" class="card-img-top" alt="cap" style="border-radius: 0;">
+          <div class="card-body">
+            <h5 class="card-title">Captain America</h5>
+            <p class="card-text">Captain America is a Marvel superhero, Steve Rogers, enhanced by soldier serum,
+              symbolizing courage, leadership, justice, and resilience in battles for freedom worldwide.</p>
+            <hr>
+            <a href="" class="btn d-grid" data-bs-target="#mod2" data-bs-toggle="modal"
+              style="background-color: saddlebrown; color: white">Read more</a>
+            <div class="modal fade" tabindex="-1" id="mod2" aria-hidden="true" data-bs-keyboard="false"
+              data-bs-backdrop="static">
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title"
+                      style="font-weight: 50px; font-family: 'Times New Roman', Times, serif; font-size: 40px;">
+                      Captain America</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="Captain america.jpg" class="img-fluid">
+                    <p class="text-secondary mt-3"
+                      style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; word-spacing: 1px;">
+                      Captain America, also known as Steve Rogers, is a super-soldier created during World War II
+                      through an experimental serum that enhanced his strength, agility, and endurance. Originally a
+                      frail young man, he becomes a symbol of hope, courage, and justice. Armed with his iconic
+                      vibranium shield, he fights against tyranny and protects the innocent. As a key member and
+                      leader of the Avengers, Captain America stands for truth and moral integrity. Despite facing
+                      modern challenges after being frozen in time, he remains dedicated to defending freedom and
+                      inspiring others through his unwavering principles.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!---Wolverine-->
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="Wolverine.jpg" class="card-img-top" alt="wolverine" style="border-radius: 0;">
+          <div class="card-body">
+            <h5 class="card-title">Wolverine</h5>
+            <p class="card-text">Wolverine, also called Logan, is a mutant with rapid healing, adamantium claws,
+              heightened senses, and a fierce, battle-hardened personality driven by instinct.
+            </p>
+            <hr>
+            <a href="" class="btn d-grid" data-bs-toggle="modal" data-bs-target="#mod3"
+              style="background-color: saddlebrown; color: white;">Read more</a>
+            <div class="modal fade" tabindex="-1" id="mod3" aria-hidden="true" data-bs-keyboard="false"
+              data-bs-backdrop="static">
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title"
+                      style="font-weight: 50px; font-family: 'Times New Roman', Times, serif; font-size: 40px;">
+                      Wolverine</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="Wolverine.jpg" class="img-fluid">
+                    <p class="text-secondary mt-3"
+                      style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; word-spacing: 1px;">
+                      Wolverine, also known as Logan, is a fierce mutant with accelerated healing powers, heightened
+                      senses, and razor-sharp adamantium claws. His regenerative ability allows him to recover from
+                      nearly any injury, making him almost immortal. With a mysterious and troubled past, Wolverine
+                      struggles with his inner rage and animal instincts while trying to do what is right. He is a key
+                      member of the X-Men, often acting as both a lone warrior and a loyal teammate. Despite his rough
+                      exterior, Wolverine has a strong sense of honor, protecting the innocent and fighting for
+                      justice.
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!---Loki-->
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="loki 2.jpg" class="card-img-top" alt="loki" style="border-radius: 0;">
+          <div class="card-body">
+            <h5 class="card-title">Loki</h5>
+            <p class="card-text">Loki, the Asgardian trickster god, uses magic and cunning, shifting between villain
+              and ally, driven by ambition, mischief, and complex relationships unpredictability.
+
+            </p>
+            <hr>
+            <a href="" class="btn d-grid" data-bs-target="#mod4" data-bs-toggle="modal"
+              style="background-color: saddlebrown; color: white;">Read more</a>
+            <div class="modal fade" tabindex="-1" id="mod4" aria-hidden="true" data-bs-keyboard="false"
+              data-bs-backdrop="static">
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title"
+                      style="font-weight: 50px; font-family: 'Times New Roman', Times, serif; font-size: 40px;">
+                      Loki</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="loki 2.jpg" class="img-fluid">
+                    <p class="text-secondary mt-3"
+                      style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; word-spacing: 1px;">
+                      Loki is the God of Mischief, a complex and cunning figure from Asgard and the adopted brother of
+                      Thor. Known for his intelligence, magical abilities, and shape-shifting powers, Loki often uses
+                      deception and manipulation to achieve his goals. Though frequently portrayed as a villain, his
+                      character evolves with moments of redemption and inner conflict. Struggling with identity,
+                      jealousy, and a desire for recognition, he walks a fine line between chaos and heroism. Loki’s
+                      unpredictable nature and charm make him one of Marvel’s most fascinating and layered characters,
+                      constantly shifting between enemy and reluctant ally.
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!---Moon Knight-->
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="Moon Knight.jpg" class="card-img-top" alt="moon knight" style="border-radius: 0;">
+          <div class="card-body">
+            <h5 class="card-title">Moon Knight</h5>
+            <p class="card-text">Moon Knight, also known as Marc Spector, is a vigilante empowered by Khonshu,
+              battling crime with multiple identities, combat skills, and supernatural resilience.
+            </p>
+            <hr>
+            <a href="" class="btn d-grid" data-bs-toggle="modal" data-bs-target="#mod5"
+              style="background-color: saddlebrown; color: white;">Read more</a>
+            <div class="modal fade" tabindex="-1" id="mod5" aria-hidden="true" data-bs-keyboard="false"
+              data-bs-backdrop="static">
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title"
+                      style="font-weight: 50px; font-family: 'Times New Roman', Times, serif; font-size: 40px;">
+                      Moon Knight</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="Moon Knight.jpg" class="img-fluid">
+                    <p class="text-secondary mt-3"
+                      style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; word-spacing: 1px;">
+                      Moon Knight, also known as Marc Spector, is a complex vigilante empowered by the Egyptian god
+                      Khonshu. A former mercenary, he is revived and becomes the Moon Knight, gaining enhanced
+                      strength, endurance, and combat skills that often increase at night. He struggles with
+                      dissociative identity disorder, having multiple personalities that influence his actions and
+                      decisions. Despite his mental challenges, he is a relentless crime fighter who protects the
+                      innocent. Known for his white costume and brutal fighting style, Moon Knight operates in the
+                      shadows, blending justice, vengeance, and mystery in his mission.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!---Deadpool-->
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="deadpool.jpg" class="card-img-top" alt="deadpool" style="border-radius: 0;">
+          <div class="card-body">
+            <h5 class="card-title">Deadpool</h5>
+            <p class="card-text">Moon Knight, also known as Marc Spector, is a vigilante empowered by Khonshu,
+              battling crime with multiple identities, combat skills, and supernatural resilience.
+            </p>
+            <hr>
+            <a href="" class="btn d-grid" data-bs-toggle="modal" data-bs-target="#mod6"
+              style="background-color: saddlebrown; color: white;">Read more</a>
+            <div class="modal fade" tabindex="-1" id="mod6" aria-hidden="true" data-bs-keyboard="false"
+              data-bs-backdrop="static">
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title"
+                      style="font-weight: 50px; font-family: 'Times New Roman', Times, serif; font-size: 40px;">
+                      Deadpool</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="deadpool.jpg" class="img-fluid">
+                    <p class="text-secondary mt-3"
+                      style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; word-spacing: 1px;">
+                      Deadpool, also known as Wade Wilson, is a wisecracking antihero with a dark sense of humor and
+                      exceptional combat skills. After undergoing an experimental procedure, he gains a powerful
+                      healing factor that allows him to recover from almost any injury, making him nearly immortal.
+                      Known as the “Merc with a Mouth,” Deadpool constantly breaks the fourth wall, talking directly
+                      to the audience and making pop culture jokes. Though unpredictable and often chaotic, he has
+                      moments of genuine care and heroism. His mix of violence, comedy, and self-awareness makes him
+                      one of Marvel’s most unique characters.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!---Hawkeye-->
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="hawkeye-a326pji23dkf26xm.jpg" class="card-img-top" alt="hawkeye" style="border-radius: 0;">
+          <div class="card-body">
+            <h5 class="card-title">Hawkeye</h5>
+            <p class="card-text">Hawkeye, also known as Clint Barton, is a master archer with exceptional accuracy,
+              tactical skills, and unwavering determination, fighting alongside the Avengers.
+            </p>
+            <hr>
+            <a href="" class="btn d-grid" data-bs-toggle="modal" data-bs-target="#mod7"
+              style="background-color: saddlebrown; color: white;">Read more</a>
+            <div class="modal fade" tabindex="-1" id="mod7" aria-hidden="true" data-bs-keyboard="false"
+              data-bs-backdrop="static">
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title"
+                      style="font-weight: 50px; font-family: 'Times New Roman', Times, serif; font-size: 40px;">
+                      Hawkeye</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="hawkeye-a326pji23dkf26xm.jpg" class="img-fluid">
+                    <p class="text-secondary mt-3"
+                      style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; word-spacing: 1px;">
+                      Hawkeye, also known as Clint Barton, is a master archer and skilled marksman with exceptional
+                      accuracy and reflexes. Though he lacks superpowers, his expertise with the bow and various trick
+                      arrows makes him a valuable member of the Avengers. Trained as a fighter and spy, he often
+                      undertakes dangerous missions with precision and determination. Hawkeye is known for his sharp
+                      wit, strong moral compass, and loyalty to his team. Despite being surrounded by superpowered
+                      heroes, he proves that courage, skill, and dedication can make an ordinary human truly
+                      extraordinary.
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!---Thor-->
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="thor.jpg" class="card-img-top" alt="thor" style="border-radius: 0;">
+          <div class="card-body">
+            <h5 class="card-title">Thor</h5>
+            <p class="card-text">Thor, the Asgardian god of thunder, wields Mjolnir, controls lightning, possesses
+              immense strength, and defends realms with courage, honor, and heroic determination.
+            </p>
+            <hr>
+            <a href="" class="btn d-grid" data-bs-toggle="modal" data-bs-target="#mod8"
+              style="background-color: saddlebrown; color: white;">Read more</a>
+            <div class="modal fade" tabindex="-1" id="mod8" aria-hidden="true" data-bs-keyboard="false"
+              data-bs-backdrop="static">
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title"
+                      style="font-weight: 50px; font-family: 'Times New Roman', Times, serif; font-size: 40px;">
+                      Thor</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="thor.jpg" class="img-fluid">
+                    <p class="text-secondary mt-3"
+                      style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; word-spacing: 1px;">
+                      Thor is the Asgardian God of Thunder, wielding the enchanted hammer Mjolnir, which grants him
+                      control over lightning and immense power. As the son of Odin, he is a mighty warrior and
+                      protector of both Asgard and Earth. Thor possesses superhuman strength, durability, and
+                      longevity, making him one of the strongest Avengers. Though once arrogant, he grows into a noble
+                      and compassionate hero who values humility and responsibility. His battles against powerful
+                      enemies and his loyalty to his friends define his journey as a legendary champion dedicated to
+                      protecting the universe from evil forces.
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!---Ghost Rider-->
+
+      <div class="col">
+        <div class="card h-100  ">
+          <img src="ghost rider.jpg" class="card-img-top" alt="ghost rider" style="border-radius: 0;">
+          <div class="card-body">
+            <h5 class="card-title">Ghost Rider</h5>
+            <p class="card-text">Ghost Rider, also known as Johnny Blaze, is a supernatural antihero with flaming
+              skull, hellfire powers, and vengeance-driven spirit punishing the guilty.
+            </p>
+            <hr>
+            <a href="" class="btn d-grid" data-bs-toggle="modal" data-bs-target="#mod9"
+              style="background-color: saddlebrown; color: white;">Read more</a>
+            <div class="modal fade" tabindex="-1" id="mod9" aria-hidden="true" data-bs-keyboard="false"
+              data-bs-backdrop="static">
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title"
+                      style="font-weight: 50px; font-family: 'Times New Roman', Times, serif; font-size: 40px;">
+                      Ghost Rider</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="ghost rider.jpg" class="img-fluid">
+                    <p class="text-secondary mt-3"
+                      style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; word-spacing: 1px;">
+                      Ghost Rider is a supernatural antihero bound to a demonic spirit, often portrayed as Johnny
+                      Blaze. After making a deal to save a loved one, he becomes the Spirit of Vengeance, transforming
+                      into a flaming-skulled rider at night. He wields hellfire chains, possesses superhuman strength,
+                      and can punish the guilty with the terrifying Penance Stare, forcing them to feel their victims’
+                      pain. Driven by justice and vengeance, Ghost Rider hunts evil souls relentlessly. Despite his
+                      fearsome appearance, he struggles with his curse, balancing his humanity with the dark power
+                      that defines his existence.
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!---Winter Soldier-->
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="wp1820127-winter-soldier-wallpapers.jpg" class="card-img-top" alt="winter soldier"
+            style="border-radius: 0;">
+          <div class="card-body">
+            <h5 class="card-title">Winter Soldier</h5>
+            <p class="card-text">Winter Soldier, also known as Bucky Barnes, is a brainwashed super-soldier assassin
+              with enhanced strength, cybernetic arm, and a troubled past seeking redemption.
+            </p>
+            <hr>
+            <a href="" class="btn d-grid" data-bs-toggle="modal" data-bs-target="#mod10"
+              style="background-color: saddlebrown; color: white;">Read more</a>
+            <div class="modal fade" tabindex="-1" id="mod10" aria-hidden="true" data-bs-keyboard="false"
+              data-bs-backdrop="static">
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title"
+                      style="font-weight: 50px; font-family: 'Times New Roman', Times, serif; font-size: 40px;">
+                      Winter Soldier</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="wp1820127-winter-soldier-wallpapers.jpg" class="img-fluid">
+                    <p class="text-secondary mt-3"
+                      style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; word-spacing: 1px;">
+                      Winter Soldier, also known as Bucky Barnes, is a former soldier and close friend of Captain
+                      America. Presumed dead during World War II, he is captured and brainwashed by HYDRA, turning him
+                      into a deadly assassin known as the Winter Soldier. Enhanced with a cybernetic arm and
+                      exceptional combat skills, he carries out covert missions for years. Eventually freed from his
+                      conditioning, Bucky struggles to atone for his past actions. Seeking redemption, he fights
+                      alongside heroes like the Avengers, proving his courage, loyalty, and determination to reclaim
+                      his identity and make things right.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!---Spider Man-->
+
+      <div class="col">
+        <div class="card h-100  ">
+          <img src="wp4991634-spider-man-far-from-home-logo-wallpapers.jpg" class="card-img-top" alt="spider man"
+            style="border-radius: 0;">
+          <div class="card-body">
+            <h5 class="card-title">Spider Man</h5>
+            <p class="card-text">Spider-Man, also known as Peter Parker, is a teenage hero with spider powers,
+              fighting crime while balancing responsibility, life, and personal struggles.
+            </p>
+            <hr>
+            <a href="" class="btn d-grid" data-bs-toggle="modal" data-bs-target="#mod11"
+              style="background-color: saddlebrown; color: white;">Read more</a>
+            <div class="modal fade" tabindex="-1" id="mod11" aria-hidden="true" data-bs-keyboard="false"
+              data-bs-backdrop="static">
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title"
+                      style="font-weight: 50px; font-family: 'Times New Roman', Times, serif; font-size: 40px;">
+                      Spider Man</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="wp4991634-spider-man-far-from-home-logo-wallpapers.jpg" class="img-fluid">
+                    <p class="text-secondary mt-3"
+                      style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; word-spacing: 1px;">
+                      Spider-Man, also known as Peter Parker, is a young hero who gains spider-like abilities after
+                      being bitten by a radioactive spider. He develops superhuman strength, agility, and the ability
+                      to cling to walls, along with his “spider-sense” that warns him of danger. Using his
+                      intelligence, he creates web-shooters to swing through the city and fight crime. Guided by the
+                      principle “with great power comes great responsibility,” Spider-Man protects New York while
+                      balancing his personal life. Despite challenges and losses, he remains a symbol of hope,
+                      courage, and selflessness, inspiring others through his actions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!---Venom-->
+
+      <div class="col">
+        <div class="card h-100  ">
+          <img src="wp5572273-venom-amoled-4k-wallpapers.jpg" class="card-img-top" alt="venom"
+            style="border-radius: 0;">
+          <div class="card-body">
+            <h5 class="card-title">Venom</h5>
+            <p class="card-text">Venom, also known as Eddie Brock, is a symbiote antihero with immense strength,
+              shapeshifting abilities, and a dark, protective bond driven by hunger,aggression.
+            </p>
+            <hr>
+            <a href="" class="btn d-grid" data-bs-target="#mod12" data-bs-toggle="modal"
+              style="background-color: saddlebrown; color: white;">Read more</a>
+            <div class="modal fade" tabindex="-1" id="mod12" aria-hidden="true" data-bs-keyboard="false"
+              data-bs-backdrop="static">
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title"
+                      style="font-weight: 50px; font-family: 'Times New Roman', Times, serif; font-size: 40px;">
+                      Venom</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="wp5572273-venom-amoled-4k-wallpapers.jpg" class="img-fluid">
+                    <p class="text-secondary mt-3"
+                      style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; word-spacing: 1px;">
+                      Venom is a powerful antihero formed when an alien symbiote bonds with a human host, most
+                      famously Eddie Brock. The symbiote grants superhuman strength, agility, shape-shifting
+                      abilities, and the power to create web-like tendrils. It also enhances the host’s emotions,
+                      often leading to aggression and conflict. Venom shares a deep connection with Spider-Man,
+                      inheriting his powers and symbol. Though initially a villain driven by revenge, Venom evolves
+                      into a lethal protector, targeting criminals and threats. This complex relationship between host
+                      and symbiote creates a unique character balancing darkness, strength, and a twisted sense of
+                      justice.
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!---Hulk-->
+
+      <div class="col">
+        <div class="card h-100  ">
+          <img src="hhulk.jpg" class="card-img-top" alt="hulk" style="border-radius: 0;">
+          <div class="card-body">
+            <h5 class="card-title">Hulk</h5>
+            <p class="card-text">Hulk, also known as Bruce Banner, is a gamma-powered giant with immense strength,
+              uncontrollable rage, and a struggle between intellect and destructive power.
+            </p>
+            <hr>
+            <a href="" class="btn d-grid" data-bs-target="#mod13" data-bs-toggle="modal"
+              style="background-color: saddlebrown; color: white;">Read more</a>
+            <div class="modal fade" tabindex="-1" id="mod13" aria-hidden="true" data-bs-keyboard="false"
+              data-bs-backdrop="static">
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title"
+                      style="font-weight: 50px; font-family: 'Times New Roman', Times, serif; font-size: 40px;">
+                      Hulk</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="hhulk.jpg" class="img-fluid">
+                    <p class="text-secondary mt-3"
+                      style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; word-spacing: 1px;">
+                      Hulk, also known as Dr. Bruce Banner, is a brilliant scientist who transforms into a massive
+                      green powerhouse after exposure to gamma radiation. Triggered by anger or stress, the Hulk
+                      possesses immense strength, durability, and near-invulnerability, growing stronger as his rage
+                      increases. While Banner seeks control over his condition, the Hulk represents his suppressed
+                      emotions and raw power. Despite often being misunderstood as a destructive force, he has a
+                      heroic side and helps protect the world alongside the Avengers. The duality between Banner and
+                      Hulk defines his struggle and makes him a deeply compelling character.
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!---Doctor Strange-->
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="wp8049040-doctor-strange-pc-wallpapers.jpg" class="card-img-top" alt="doctor strange"
+            style="border-radius: 0;">
+          <div class="card-body">
+            <h5 class="card-title">Doctor Strange</h5>
+            <p class="card-text">Doctor Strange, also known as Stephen Strange, is a sorcerer supreme mastering mystic
+              arts, protecting reality from supernatural threats across dimensions and timelines.
+            </p>
+            <hr>
+            <a href="" class="btn d-grid" data-bs-target="#mod14" data-bs-toggle="modal"
+              style="background-color: saddlebrown; color: white;">Read more</a>
+            <div class="modal fade" tabindex="-1" id="mod14" aria-hidden="true" data-bs-keyboard="false"
+              data-bs-backdrop="static">
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title"
+                      style="font-weight: 50px; font-family: 'Times New Roman', Times, serif; font-size: 40px;">
+                      Doctor Strange</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="wp8049040-doctor-strange-pc-wallpapers.jpg" class="img-fluid">
+                    <p class="text-secondary mt-3"
+                      style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; word-spacing: 1px;">
+                      Doctor Strange, also known as Stephen Strange, is a former neurosurgeon who becomes the Sorcerer
+                      Supreme after a life-changing accident damages his hands. Seeking healing, he trains in the
+                      mystic arts under the Ancient One, mastering powerful spells and magical artifacts. He protects
+                      Earth from supernatural and interdimensional threats using abilities like time manipulation,
+                      astral projection, and reality warping. Wielding the Eye of Agamotto and Cloak of Levitation,
+                      Doctor Strange balances wisdom, courage, and responsibility. His journey from arrogance to
+                      humility shapes him into a guardian of the mystical realm and a key member of the Avengers.
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!---Black Panther-->
+
+      <div class="col">
+        <div class="card h-100  ">
+          <img src="wp9074274-black-panther-4k-pc-wallpapers.jpg" class="card-img-top" alt="black panther"
+            style="border-radius: 0;">
+          <div class="card-body">
+            <h5 class="card-title">Black Panther</h5>
+            <p class="card-text">Black Panther, also known as T'Challa, is Wakanda’s king, enhanced by heart-shaped
+              herb, combining strength, intellect, and leadership to protect his nation.
+            </p>
+            <hr>
+            <a href="" class="btn d-grid" data-bs-toggle="modal" data-bs-target="#mod15"
+              style="background-color: saddlebrown; color: white;">Read more</a>
+            <div class="modal fade" tabindex="-1" id="mod15" aria-hidden="true" data-bs-keyboard="false"
+              data-bs-backdrop="static">
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title"
+                      style="font-weight: 50px; font-family: 'Times New Roman', Times, serif; font-size: 40px;">
+                      Black Panther</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="wp9074274-black-panther-4k-pc-wallpapers.jpg" class="img-fluid">
+                    <p class="text-secondary mt-3"
+                      style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; word-spacing: 1px;">
+                      Black Panther, also known as T’Challa, is the king of Wakanda, a technologically advanced and
+                      hidden African nation. Enhanced by the heart-shaped herb, he possesses superhuman strength,
+                      agility, and heightened senses. As both a ruler and a warrior, he protects his people and
+                      upholds justice. Wearing a vibranium suit that absorbs and redistributes energy, Black Panther
+                      is a skilled fighter and strategist. He is also a brilliant scientist, contributing to global
+                      innovation. Balancing tradition and progress, T’Challa stands as a symbol of leadership,
+                      responsibility, and cultural pride in the Marvel universe.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!---Falcon-->
+
+      <div class="col">
+        <div class="card h-100  ">
+          <img src="falcon.jpg" height="180px" class="card-img-top" alt="quick silver" style="border-radius: 0;">
+          <div class="card-body">
+            <h5 class="card-title">Falcon</h5>
+            <p class="card-text">Falcon, Sam Wilson, is a former pararescue airman using advanced wings, expert combat
+              skills, and strong morals to fight alongside heroes and protect humanity.
+            </p>
+            <hr>
+            <a href="" class="btn d-grid" data-bs-toggle="modal" data-bs-target="#mod16"
+              style="background-color: saddlebrown; color: white;">Read more</a>
+            <div class="modal fade" tabindex="-1" id="mod16" aria-hidden="true" data-bs-keyboard="false"
+              data-bs-backdrop="static">
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title"
+                      style="font-weight: 50px; font-family: 'Times New Roman', Times, serif; font-size: 40px;">
+                      Falcon</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="falcon.jpg" class="img-fluid">
+                    <p class="text-secondary mt-3"
+                      style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 20px; word-spacing: 1px;">
+                      Falcon, also known as Sam Wilson, is a skilled aerial combatant and former pararescue airman who
+                      becomes a hero using advanced winged technology. Equipped with a high-tech flight suit and
+                      mechanical wings, he can soar through the skies with agility and precision. Falcon is also
+                      partnered with a drone named Redwing, enhancing his reconnaissance abilities. Known for his
+                      courage, loyalty, and strong moral values, he plays a vital role in the Avengers. Eventually, he
+                      takes up the mantle of Captain America, symbolizing hope, equality, and justice in the modern
+                      world.
+
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <hr>
+
+    <div class="bg-light " id="about">
+
+      <h2 class="text-center display-6" style="font-weight: 700;">About</h2>
+      <hr>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis architecto ducimus asperiores fugiat quo
+        recusandae suscipit minus perspiciatis quidem sapiente voluptate debitis, minima inventore cumque veritatis
+        laborum ullam doloribus iste! Odit omnis reiciendis dicta amet excepturi fuga dolorem enim quod, aliquam, ipsam
+        ea. Laboriosam repudiandae laborum reiciendis cum! Mollitia consequuntur excepturi delectus impedit aliquam
+        natus dolore, inventore eveniet. Consequatur obcaecati adipisci atque voluptate voluptates laboriosam molestiae,
+        ut at temporibus illo magni corrupti inventore vel cumque repellendus magnam ex possimus quo neque explicabo
+        officiis dolorum vero quibusdam. Facere minima libero enim dolorem deserunt consequatur fuga ullam, sunt,
+        assumenda omnis quod quam tempora cum laboriosam possimus accusamus delectus? Error quas voluptatum vel iste
+        quis, quaerat, natus quia veritatis numquam ipsum sunt? Reprehenderit fugiat, modi sunt asperiores obcaecati
+        perferendis facilis incidunt mollitia sint vero reiciendis assumenda qui ipsam molestiae illo numquam atque
+        eaque vitae provident earum est animi nihil. Quisquam officiis, quos explicabo assumenda modi perspiciatis alias
+        iure natus fuga consequatur hic consectetur placeat, sit ex ea? Maxime iste natus vero itaque beatae impedit,
+        magnam asperiores, rem mollitia quasi vel autem dolorum quis rerum. Harum error voluptatem voluptatum magnam
+        sunt non laudantium rem repellendus doloremque quae molestiae cupiditate, voluptatibus blanditiis nobis a
+        nostrum dolorem excepturi officia qui dolorum illo, in eos accusamus. Veniam corrupti doloremque nihil inventore
+        facere asperiores reprehenderit. Tenetur dicta temporibus nihil ipsa reprehenderit voluptates ad fugiat amet.
+        Facilis nemo vitae voluptates consequuntur hic eaque, incidunt minima praesentium aspernatur soluta quo, tempora
+        cupiditate aliquid quaerat et ratione ad recusandae aperiam rerum laboriosam? Ab dicta consequuntur voluptas
+        consequatur ea ipsam expedita, ut veniam veritatis recusandae eius? Vitae pariatur, esse explicabo fugit
+        eligendi tempora quas rem vel dolorem sapiente in. Eligendi reprehenderit eius architecto nihil, doloribus omnis
+        doloremque sequi at labore repudiandae minus veniam illo non fugiat modi, ab sed, temporibus officia eum in
+        ducimus debitis adipisci culpa. Quaerat voluptatibus distinctio, accusamus ducimus, odit cumque magni quo ut
+        numquam repellendus ea. Natus, alias nulla ab molestiae laboriosam perferendis voluptates consequatur, vero quas
+        nemo libero sint quasi at cumque iure autem quod quisquam eius dignissimos? Nam molestias blanditiis iure fugiat
+        officiis maiores perspiciatis aspernatur aliquid laboriosam, tenetur non. Eligendi explicabo laborum tempora
+        quam iure fugiat debitis perferendis, fuga quis suscipit dolorem non, numquam eos, rerum veniam corrupti id
+        mollitia natus corporis maxime accusantium magni dolorum qui. Quam ipsam maiores amet sapiente eveniet ipsum.
+        Aliquid inventore eligendi nam consequuntur illo quia optio officia vero sint provident qui, veniam id minima ex
+        eaque, officiis porro perspiciatis fugit aperiam harum quas aspernatur eveniet error. Nam modi provident
+        cupiditate a vitae blanditiis, delectus, omnis impedit dolores eveniet earum sint, iusto quia laudantium
+        accusantium porro excepturi iure ad ducimus? Aut delectus error enim quas, fuga, architecto unde cumque fugit
+        quam laborum corporis distinctio quis rerum nihil, dolor tempora dignissimos consequuntur obcaecati doloribus.
+        Vero voluptatem magnam minus dolorum facilis officiis odit eligendi itaque voluptatum, eaque temporibus quisquam
+        voluptatibus deserunt porro ipsum laborum amet in dignissimos maxime aliquid corrupti accusantium suscipit?
+        Libero voluptatem sit facilis et iure. Eum rem eius cumque!</p>
+
+    </div>
+    <hr>
+
+
+    <div id="feedback" class="mb-5" style="border: 2px solid grey;">
+      <div class="card-header">
+        <h2 class="text-center display-6 mt-3" style="font-weight: 700;">Feedback</h2>
+      </div>
+      <hr>
+
+      <form action="" id="fbck">
+        <div class="p-4">
+          <textarea class="form-control" rows="10" style="border: 2px solid black;"
+            placeholder="Enter your feedback here.......... " minlength="20" id="fb"></textarea>
+
+          <div class="submit-btn mb-5 text-center">
+            <button type="submit" onclick="feedbackchk()" class="col-5 text-light  mt-3" id="sbt1"
+              style="background-color: red; border: none;">Send</button>
+          </div>
+        </div>
+      </form>
+      
+    </div>
+
+    <a href="#"><img src="ARROW.png" class="uparrow" style="width: 100px; right: 0; top: 87%;"></a>
+
+  </div>
+</body>
+
+</html>
+
+<script>
+  document.getElementById("fbck").addEventListener("submit", function (event) {
+
+    event.preventDefault();
+
+    let fbc = document.getElementById("fb").value.trim();
+
+    if (fbc.length >= 20) {
+
+      alert("Feedback Sent");
+
+      window.location.href = "Home.html"
+
+    }
+
+    else {
+
+      alert("Please Fill the Feedback with minimum of 20 words");
+      return false
+
+
+    }
+
+  })
+
+</script>
